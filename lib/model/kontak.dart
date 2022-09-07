@@ -1,16 +1,16 @@
 class Kontak {
   int? id;
-  String? nama;
+  String? name;
   String? mobileNo;
   String? email;
   String? company;
 
-  Kontak({this.id, this.nama, this.mobileNo, this.email, this.company});
+  Kontak({this.id, this.name, this.mobileNo, this.email, this.company});
 
   Map<String, dynamic> toMap() {
     return {
       'id': id,
-      'nama': nama,
+      'name': name,
       'mobileNo': mobileNo,
       'email': email,
       'company': company,
@@ -19,7 +19,7 @@ class Kontak {
 
   Kontak.fromMap(Map<String, dynamic> map) {
     id = map['id'];
-    nama = map['nama'];
+    name = map['name'];
     mobileNo = map['mobileNo'];
     email = map['email'];
     company = map['company'];
